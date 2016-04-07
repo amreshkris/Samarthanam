@@ -1,2 +1,0 @@
-# Samarthanam
-Samarthanam Service 

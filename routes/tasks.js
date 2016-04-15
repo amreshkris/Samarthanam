@@ -3,6 +3,7 @@ var tasks = express.Router();
 var Task = require('../model/taskModel');
 
 tasks.get('/api/v1/tasks', function(req, res, next) {  
+console.log('test');
   var query = {};  
   if(req.query.status)
   {
@@ -35,5 +36,7 @@ tasks.post('/api/v1/tasks', function(req, res) {
     task.save();
 	res.status(201).send(task);		
 });
+
+
 
 module.exports = tasks;
